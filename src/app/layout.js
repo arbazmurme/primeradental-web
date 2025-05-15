@@ -1,6 +1,6 @@
+import MainLayout from "@/components/Mainlayout";
 import "./globals.css";
 import Script from "next/script";
-import MainLayout from '@/components/MainLayout';
 
 
 export const metadata = {

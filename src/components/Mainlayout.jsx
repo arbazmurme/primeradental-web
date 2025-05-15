@@ -1,13 +1,14 @@
 "use client";
 
 import React, { useEffect } from "react";
-import Header from "./layout/Hadear";
 import Footer from "./layout/Footer";
+import Hadear from "./layout/Hadear";
+
 
 const MainLayout = ({ children }) => {
   return (
     <>
-      <Header />
+      <Hadear />
       {children}
       <Footer />
     </>

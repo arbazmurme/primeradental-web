@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import Header from "./layout/Hadear";
 import Footer from "./layout/Footer";
 
-const Mainlayout = ({ children }) => {
+const MainLayout = ({ children }) => {
   return (
     <>
       <Header />
@@ -14,4 +14,4 @@ const Mainlayout = ({ children }) => {
   );
 };
 
-export default Mainlayout;
+export default MainLayout;

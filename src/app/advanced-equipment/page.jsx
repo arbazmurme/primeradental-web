@@ -1,8 +1,9 @@
+import AdvancedEquipment from '@/main-pages/service/AdvancedEquipment'
 import React from 'react'
 
 function page() {
   return (
-    <div>advanced-equipment</div>
+    <AdvancedEquipment />
   )
 }
 

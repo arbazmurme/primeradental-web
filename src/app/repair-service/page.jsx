@@ -1,8 +1,9 @@
+import RepairService from '@/main-pages/service/RepairService'
 import React from 'react'
 
 function page() {
   return (
-    <div>repair-service</div>
+    <RepairService />
   )
 }
 

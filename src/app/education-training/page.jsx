@@ -1,8 +1,9 @@
+import EducationTraining from '@/main-pages/service/EducationTraining'
 import React from 'react'
 
 function page() {
   return (
-    <div>education-training</div>
+    <EducationTraining />
   )
 }
 

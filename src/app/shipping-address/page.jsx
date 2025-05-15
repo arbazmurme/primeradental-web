@@ -1,8 +1,9 @@
+import ShippingAddress from '@/main-pages/dashboard/ShippingAddress'
 import React from 'react'
 
 function page() {
   return (
-    <div>shopping-address</div>
+    <ShippingAddress />
   )
 }
 

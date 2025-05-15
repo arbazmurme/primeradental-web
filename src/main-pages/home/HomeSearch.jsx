@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
 
 const HomeSearch = () => {
   return (
@@ -11,7 +11,7 @@ const HomeSearch = () => {
               <div className="product-box-3 h-100">
                 <div className="product-header">
                   <div className="product-image">
-                    <Link to="/product-info">
+                    <Link href="/product-info">
                       <img
                         src="./assets/p/Waldent Contra-angle.webp"
                         className="img-fluid blur-up lazyload"
@@ -23,7 +23,7 @@ const HomeSearch = () => {
                 <div className="product-footer">
                   <div className="product-detail">
                     <span className="span-name">Dental Hub</span>
-                    <Link to="/product-info">
+                    <Link href="/product-info">
                       <h5 className="name">Waldent ECO PLUS</h5>
                     </Link>
                     <h6 className="unit mt-1">1 PCS</h6>
@@ -73,7 +73,7 @@ const HomeSearch = () => {
               <div className="product-box-3 h-100">
                 <div className="product-header">
                   <div className="product-image">
-                    <Link to="/product-info">
+                    <Link href="/product-info">
                       <img
                         src="./assets/p/Waldent Contra-angle.webp"
                         className="img-fluid blur-up lazyload"
@@ -85,7 +85,7 @@ const HomeSearch = () => {
                 <div className="product-footer">
                   <div className="product-detail">
                     <span className="span-name">Dental Hub</span>
-                    <Link to="/product-info">
+                    <Link href="/product-info">
                       <h5 className="name">Waldent ECO PLUS</h5>
                     </Link>
                     <h6 className="unit mt-1">2 PCS</h6>
@@ -135,7 +135,7 @@ const HomeSearch = () => {
               <div className="product-box-3 h-100">
                 <div className="product-header">
                   <div className="product-image">
-                    <Link to="/product-info">
+                    <Link href="/product-info">
                       <img
                         src="./assets/p/Waldent Contra-angle.webp"
                         className="img-fluid blur-up lazyload"
@@ -147,7 +147,7 @@ const HomeSearch = () => {
                 <div className="product-footer">
                   <div className="product-detail">
                     <span className="span-name">Dental Hub</span>
-                    <Link to="/product-info">
+                    <Link href="/product-info">
                       <h5 className="name">Waldent ECO PLUS</h5>
                     </Link>
                     <h6 className="unit mt-1">1 PCS</h6>
@@ -197,7 +197,7 @@ const HomeSearch = () => {
               <div className="product-box-3 h-100">
                 <div className="product-header">
                   <div className="product-image">
-                    <Link to="/product-info">
+                    <Link href="/product-info">
                       <img
                         src="./assets/p/Waldent Contra-angle.webp"
                         className="img-fluid blur-up lazyload"
@@ -209,7 +209,7 @@ const HomeSearch = () => {
                 <div className="product-footer">
                   <div className="product-detail">
                     <span className="span-name">Dental Hub</span>
-                    <Link to="/product-info">
+                    <Link href="/product-info">
                       <h5 className="name">Waldent ECO PLUS</h5>
                     </Link>
                     <h6 className="unit mt-1">1 PCS</h6>
@@ -259,7 +259,7 @@ const HomeSearch = () => {
               <div className="product-box-3 h-100">
                 <div className="product-header">
                   <div className="product-image">
-                    <Link to="/product-info">
+                    <Link href="/product-info">
                       <img
                         src="./assets/p/Waldent Contra-angle.webp"
                         className="img-fluid blur-up lazyload"
@@ -271,7 +271,7 @@ const HomeSearch = () => {
                 <div className="product-footer">
                   <div className="product-detail">
                     <span className="span-name">Dental Hub</span>
-                    <Link to="/product-info">
+                    <Link href="/product-info">
                       <h5 className="name">Waldent ECO PLUS</h5>
                     </Link>
                     <h6 className="unit mt-1">1 PCS</h6>
@@ -321,7 +321,7 @@ const HomeSearch = () => {
               <div className="product-box-3 h-100">
                 <div className="product-header">
                   <div className="product-image">
-                    <Link to="/product-info">
+                    <Link href="/product-info">
                       <img
                         src="./assets/p/Waldent Contra-angle.webp"
                         className="img-fluid blur-up lazyload"
@@ -333,7 +333,7 @@ const HomeSearch = () => {
                 <div className="product-footer">
                   <div className="product-detail">
                     <span className="span-name">Dental Hub</span>
-                    <Link to="/product-info">
+                    <Link href="/product-info">
                       <h5 className="name">Waldent ECO PLUS</h5>
                     </Link>
                     <h6 className="unit mt-1">1 PCS</h6>
@@ -383,7 +383,7 @@ const HomeSearch = () => {
               <div className="product-box-3 h-100">
                 <div className="product-header">
                   <div className="product-image">
-                    <Link to="/product-info">
+                    <Link href="/product-info">
                       <img
                         src="./assets/p/Waldent Contra-angle.webp"
                         className="img-fluid blur-up lazyload"
@@ -395,7 +395,7 @@ const HomeSearch = () => {
                 <div className="product-footer">
                   <div className="product-detail">
                     <span className="span-name">Dental Hub</span>
-                    <Link to="/product-info">
+                    <Link href="/product-info">
                       <h5 className="name">Waldent ECO PLUS</h5>
                     </Link>
                     <h6 className="unit mt-1">1 PCS</h6>
@@ -445,7 +445,7 @@ const HomeSearch = () => {
               <div className="product-box-3 h-100">
                 <div className="product-header">
                   <div className="product-image">
-                    <Link to="/product-info">
+                    <Link href="/product-info">
                       <img
                         src="./assets/p/Waldent Contra-angle.webp"
                         className="img-fluid blur-up lazyload"
@@ -457,7 +457,7 @@ const HomeSearch = () => {
                 <div className="product-footer">
                   <div className="product-detail">
                     <span className="span-name">Dental Hub</span>
-                    <Link to="/product-info">
+                    <Link href="/product-info">
                       <h5 className="name">Waldent ECO PLUS</h5>
                     </Link>
                     <h6 className="unit mt-1">1 PCS</h6>

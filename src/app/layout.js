@@ -1,7 +1,8 @@
 import MainLayout from "@/components/Mainlayout";
 import "./globals.css";
 import Script from "next/script";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import ReduxProviderLayout from "@/components/ReduxProviderLayout";
 
 export const metadata = {
   title: "Primera Dental Hub",
@@ -108,7 +109,9 @@ export default function RootLayout({ children }) {
         <Script src="/assets/js/custom-wow.js" strategy="afterInteractive" />
         <Script src="/assets/js/script.js" strategy="afterInteractive" />
         <Script src="/assets/js/theme-setting.js" strategy="afterInteractive" />
-        <MainLayout>{children}</MainLayout>
+        <ReduxProviderLayout>
+          <MainLayout>{children}</MainLayout>
+        </ReduxProviderLayout>
       </body>
     </html>
   );

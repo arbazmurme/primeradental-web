@@ -1,8 +1,9 @@
+import Successfully from '@/main-pages/cart/Successfully'
 import React from 'react'
 
 function page() {
   return (
-    <div>successfully</div>
+    <Successfully />
   )
 }
 

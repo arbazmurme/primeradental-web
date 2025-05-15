@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  .MainofOtpPage {
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 100%;
+    /* background-image: url(../../assets/Images/BackgroundImage8.jpg); */
+    background-image: url(../../../public/assets/images/loginbgc.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0.8rem;
+    gap: 1rem;
+    /* margin-top: 2rem; */
+  }
+
+  .subContainerofOtpPage {
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-evenly; */
+    /* align-items: center; */
+    gap: 2rem;
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  .part1ofOtp {
+    /* border: 1px solid; */
+    height: 11rem;
+    /* background-color: red; */
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Giffff {
+    height: 100%;
+    width: 10rem;
+    /* border: 1px solid red; */
+  }
+
+  .part2ofOtp > span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .part3ofOtp {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+
+  .Numbs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  .Numbs > input {
+    width: 3.5rem;
+    border-bottom: 2px solid #1bb876;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    text-align: center;
+  }
+
+  .part3ofOtp > span {
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .btnContainerrr {
+    height: 3.5rem;
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+    /* background-color: red; */
+    background-color: #1bb876;
+    border-color: #1bb876;
+    margin-top: 0.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .btnContainerrr > button {
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .part2ofOtp {
+    display: flex;
+    flex-direction: column;
+  }
+}

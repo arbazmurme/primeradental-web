@@ -1,8 +1,9 @@
+import Checkout from '@/main-pages/cart/Checkout'
 import React from 'react'
 
 function page() {
   return (
-    <div>check-out</div>
+    <Checkout />
   )
 }
 

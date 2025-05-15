@@ -1,8 +1,9 @@
+import Payment from '@/main-pages/service/Payment'
 import React from 'react'
 
 function page() {
   return (
-    <div>payment</div>
+    <Payment />
   )
 }
 

@@ -1,8 +1,9 @@
+import Dashboard from '@/main-pages/dashboard/Dashboard'
 import React from 'react'
 
 function page() {
   return (
-    <div>dashboard</div>
+    <Dashboard />
   )
 }
 

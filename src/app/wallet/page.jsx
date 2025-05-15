@@ -1,8 +1,9 @@
+import Wallets from '@/main-pages/wallet/Wallets'
 import React from 'react'
 
 function page() {
   return (
-    <div>wallet</div>
+    <Wallets />
   )
 }
 

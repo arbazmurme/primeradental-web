@@ -1,8 +1,9 @@
+import HomeServices from '@/main-pages/service/HomeServices'
 import React from 'react'
 
 function page() {
   return (
-    <div>service</div>
+    <HomeServices />
   )
 }
 

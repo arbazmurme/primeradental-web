@@ -1,8 +1,9 @@
+import DentalSolutions from '@/main-pages/service/DentalSolutions'
 import React from 'react'
 
 function page() {
   return (
-    <div>dental-solutions</div>
+    <DentalSolutions />
   )
 }
 

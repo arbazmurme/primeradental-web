@@ -1,8 +1,9 @@
+import DemoInstallation from '@/main-pages/service/DemoInstallation'
 import React from 'react'
 
 function page() {
   return (
-    <div>demo-installation</div>
+    <DemoInstallation />
   )
 }
 

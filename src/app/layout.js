@@ -1,6 +1,7 @@
-import Mainlayout from "@/components/MainLayout";
 import "./globals.css";
 import Script from "next/script";
+import MainLayout from '@/components/MainLayout';
+
 
 export const metadata = {
   title: "Primera Dental Hub",
@@ -107,7 +108,7 @@ export default function RootLayout({ children }) {
         <Script src="/assets/js/custom-wow.js" strategy="afterInteractive" />
         <Script src="/assets/js/script.js" strategy="afterInteractive" />
         <Script src="/assets/js/theme-setting.js" strategy="afterInteractive" />
-        <Mainlayout>{children}</Mainlayout>
+        <MainLayout>{children}</MainLayout>
       </body>
     </html>
   );

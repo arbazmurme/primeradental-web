@@ -84,7 +84,7 @@ const Address = () => {
                     </Link>
                   </li>
 
-                  <Link href="/Order">
+                  <Link href="/order">
                     <li className="nav-item" role="presentation">
                       <button
                         className="nav-link"

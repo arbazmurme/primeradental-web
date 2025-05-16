@@ -13,6 +13,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/* Add this to your CSS file */
+.slider-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.slider-item {
+  display: inline-block;
+  white-space: normal;
+  flex: 0 0 auto;
+}
 
 .initialKeenStyle {
   display: flex;

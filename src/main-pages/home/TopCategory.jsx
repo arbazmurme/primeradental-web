@@ -1,7 +1,8 @@
 "use client";
 import SliderTopCategory from "@/components/slidercomponents/SliderTopCategory";
-
 const TopCategory = () => {
+ 
+
   return (
     <>
       <section>

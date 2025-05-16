@@ -31,7 +31,10 @@ const ShopCategory = () => {
             </div>
           </div>
         </section>
-        <div className="container-fluid-lg mt-lg-5">
+        <div
+          className="container-fluid-lg mt-lg-5"
+          style={{ overflowX: "auto", whiteSpace: "nowrap" }}
+        >
           <br />
           <br />
           <SliderTopCategory />
@@ -48,7 +51,7 @@ const ShopCategory = () => {
                         <i className="fa-solid fa-arrow-left" /> Back
                       </h3>
                     </div>
-                    
+
                     <div
                       className="accordion custom-accordion"
                       id="accordionExample"

@@ -1,61 +1,41 @@
 "use client";
-import React, { useRef, useState } from "react";
+
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 
-export default function SliderBanner() {
+export default function SliderBanner({ mainHomeSliderTotal }) {
   return (
-    <>
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={10}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        breakpoints={{
-          "@0.00": {
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-          "@0.75": {
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-          "@1.00": {
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-          "@1.50": {
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-        }}
-        modules={[Autoplay]}
-        className="mySwiper"
-      >
+    <Swiper
+      slidesPerView={1}
+      spaceBetween={0}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      modules={[Autoplay]}
+      className="mySwiper"
+    >
+      {mainHomeSliderTotal && mainHomeSliderTotal.length > 0 ? (
+        mainHomeSliderTotal.map((item) => (
+          <SwiperSlide key={item._id}>
+            <div className="w-full h-auto">
+              <img
+                src={item.DeskImg}
+                alt={item.name}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </SwiperSlide>
+        ))
+      ) : (
         <SwiperSlide>
-          <div className=" active">
-            <img src="/assets/p/Banner-5.webp" className="d-block w-100" alt="..." />
+          <div className="w-full text-center p-10 bg-gray-100">
+            No slider data available.
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className=" active">
-            <img src="/assets/p/Banner-6.webp" className="d-block w-100" alt="..." />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className=" active">
-            <img src="/assets/p/Banner-4.webp" className="d-block w-100" alt="..." />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="">
-            <img src="/assets/p/Banner-3.webp" className="d-block w-100" alt="..." />
-          </div>
-        </SwiperSlide>
-      </Swiper>
-    </>
+      )}
+    </Swiper>
   );
 }

@@ -4,7 +4,7 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import Link from "next/link";
 
-export default function SliderHomeService1() {
+export default function SliderHomeService1({serviceCategory}) {
   return (
     <>
       <Swiper
@@ -36,70 +36,38 @@ export default function SliderHomeService1() {
         className="mySwiper"
         style={{ marginTop: "-15px" }}
       >
-        <SwiperSlide>
-          <div className="category-slider arrow-slidercol-xxl-2 col-lg-2 col-md-3 col-3  p-1">
-            <div>
-              <Link href="/service" />
-              <div
-                className="shop-category-box border-0 wow fadeIn"
-                style={{ visibility: "visible", animationName: "fadeIn" }}
-              >
-                <Link href="/service" />
-                <Link href="/service">
-                  <img
-                    src="./assets/p/BackgroundImages/5.webp"
-                    className="img-fluid1 blur-up lazyloaded"
-                    alt="img"
-                    style={{ width: "200px", height: "200px" }}
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="category-slider arrow-slidercol-xxl-2 col-lg-2 col-md-3 col-3  p-1">
-            <div>
-              <Link href="/service" />
-              <div
-                className="shop-category-box border-0 wow fadeIn"
-                style={{ visibility: "visible", animationName: "fadeIn" }}
-              >
-                <Link href="/service" />
-                <Link href="/service">
-                  <img
-                    src="./assets/p/BackgroundImages/6.webp"
-                    className="img-fluid1 blur-up lazyloaded"
-                    alt="img"
-                    style={{ width: "200px", height: "200px" }}
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="category-slider arrow-slidercol-xxl-2 col-lg-2 col-md-3 col-3  p-1">
-            <div>
-              <Link href="/service" />
-              <div
-                className="shop-category-box border-0 wow fadeIn"
-                style={{ visibility: "visible", animationName: "fadeIn" }}
-              >
-                <Link href="/service" />
-                <Link href="/service">
-                  <img
-                    src="./assets/p/BackgroundImages/7.webp"
-                    className="img-fluid1 blur-up lazyloaded"
-                    alt="img"
-                    style={{ width: "200px", height: "200px" }}
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
+        {serviceCategory?.map((category) => (
+                <SwiperSlide key={category._id}>
+                  <div className="d-flex justify-content-center">
+                    <Link href={`/service/${category.slugUrl}`}>
+                      <div className="position-relative">
+                        <img
+                          src={category.catimage}
+                          className=""
+                          alt={category.name}
+                          style={{
+                            width: "230px",
+                            height: "230px",
+                            objectFit: "cover",
+                            borderRadius: "2px",
+                          }}
+                        />
+                        <div className="position-absolute bottom-0 start-0 end-0 text-center p-2" 
+                          style={{
+                            background: 'rgba(0, 0, 0, 0.5)',
+                            color: 'white',
+                            borderBottomLeftRadius: '2px',
+                            borderBottomRightRadius: '2px'
+                          }}>
+                          <h5 className="m-0" style={{ fontSize: '16px' }}>{category.name}</h5>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                </SwiperSlide>
+              ))}
       </Swiper>
     </>
   );
 }
+

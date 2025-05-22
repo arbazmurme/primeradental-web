@@ -5,7 +5,7 @@ const Baseurl = process.env.NEXT_PUBLIC_BASE_URL;
 
 const initialState = {
   dealOfTheDay: [],
-  hotProducts: [],  // Changed from dodProducts to hotProducts for clarity
+  hotProducts: [], 
   productLoading: false,
   isProductAvailable: false,
   error: null,
@@ -28,9 +28,7 @@ export const getHotProducts = createAsyncThunk(
   'product/getHotProducts',
   async (_, thunkAPI) => {
     try {
-      const url = `${Baseurl}/api/v1/product/dealoftheday`;
-      console.log("123456789");
-      
+      const url = `${Baseurl}/api/v1/product/trending-limit`;
       const resp = await axios.get(url);
       return resp.data;
     } catch (error) {

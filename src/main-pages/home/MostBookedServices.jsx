@@ -1,8 +1,11 @@
 "use client"
 import SliderMostBookedServices from "@/components/sliderservice/SliderMostBookedServices";
 import React from "react";
+import { useSelector } from "react-redux";
 
 const MostBookedServices = () => {
+
+  
   return (
     <>
       <section className="">

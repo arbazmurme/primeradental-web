@@ -1,8 +1,10 @@
 "use client";
 import SliderHomeService from "@/components/slidercomponents/SliderHomeService";
 import React from "react";
+import { useSelector } from "react-redux";
 
 const HomeService = () => {
+
   return (
     <>
       <section className="product-section">

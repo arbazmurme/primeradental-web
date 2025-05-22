@@ -1,14 +1,19 @@
 "use client";
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import Link from 'next/link';
+import { useDispatch, useSelector } from 'react-redux';
+import { getHotProducts } from '@/redux/product/productSlice';
 
 
 
 
 export default function SliderAllProducts() {
+  const { hotProducts } = useSelector((state) => state.product);
+  console.log(hotProducts, "hotProducts");
+  
   return (
     <>
       <Swiper

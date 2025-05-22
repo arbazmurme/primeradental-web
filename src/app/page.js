@@ -14,7 +14,7 @@ import LowestPrices from "@/main-pages/home/LowestPrices";
 function page() {
   return (
     <div>
-      <Banner />
+      <Banner />  
       <TopCategory />
       <WeeklyDiscounts />
       <NewAndNoteworthy />

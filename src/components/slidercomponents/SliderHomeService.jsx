@@ -8,62 +8,64 @@ import Link from "next/link";
 
 export default function SliderHomeService() {
   return (
-    <>
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={10}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        breakpoints={{
-          0: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-          750: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1000: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-          1500: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-        }}
-        modules={[Autoplay]}
-        className="mySwiper"
-        style={{ marginTop: "-6px" }}
-      >
-        <section className="category-section-2" style={{ marginTop: "-50px" }}>
-          <div className="row mt-2">
-            <div className="col-12 d-flex flex-wrap">
-              {["1", "2", "3", "4"].map((index) => (
+    <section className="category-section-2" style={{ marginTop: "-50px" }}>
+      <div className="container">
+        <div className="row mt-2">
+          <div className="col-12">
+            <Swiper
+              slidesPerView={4} // Show 4 slides at once by default
+              spaceBetween={20}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                },
+                576: {
+                  slidesPerView: 2,
+                },
+                768: {
+                  slidesPerView: 3,
+                },
+                1200: {
+                  slidesPerView: 4,
+                },
+              }}
+              modules={[Autoplay]}
+              className="mySwiper"
+            >
+              {[1, 2, 3, 4, 5, 6].map((index) => (
                 <SwiperSlide key={index}>
-                  <div className="category-slider col-xxl-2 col-lg-2 col-md-3 col-3 p-1">
-                    <div>
-                      <Link href="/service">
-                        <div className="shop-category-box border-0">
-                          <img
-                            src={`./assets/p/BackgroundImages/${index}.webp`}
-                            className="img-fluid blur-up lazyloaded"
-                            alt={`Category`}
-                            style={{ width: "200px", height: "200px" }}
-                          />
-                        </div>
-                      </Link>
-                    </div>
+                  <div className="d-flex justify-content-center">
+                    <Link href="/service">
+                      <div className="shop-category-box border-0">
+                        <img
+                          src={`/assets/p/BackgroundImages/${index}.webp`}
+                          className="img-fluid"
+                          alt={`Category ${index}`}
+                          style={{
+                            width: "200px",
+                            height: "200px",
+                            objectFit: "cover",
+                            borderRadius: "2px",
+                          }}
+                        />
+                      </div>
+                    </Link>
                   </div>
                 </SwiperSlide>
               ))}
+            </Swiper>
+
+            {/* Optional: Other content below the slider */}
+            <div className="mt-3">
+              <SliderHomeService1 />
             </div>
           </div>
-        </section>
-        <SliderHomeService1 />
-      </Swiper>
-    </>
+        </div>
+      </div>
+    </section>
   );
 }

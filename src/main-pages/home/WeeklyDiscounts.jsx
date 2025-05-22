@@ -1,17 +1,19 @@
 "use client";
 import SliderWeeklyDiscounts from '@/components/slidercomponents/SliderWeeklyDiscounts'
 import React from 'react'
+import { useSelector } from 'react-redux';
 
 const WeeklyDiscounts = () => {
+
+  
   return (
     <>
-
       <section className="product-section">
         <div className="container-fluid-lg">
           <div className="row g-sm-4 g-3">
             <div className="col-xxl-9 col-xl-12">
               <div className="title d-block" style={{ marginTop: "0px" }}>
-                <h2>Recently Viewed</h2>
+                <h2>Deal Of The Day</h2>
                 <span className="title-leaf" style={{marginLeft:"21px"}}>
                   <svg className="icon-width">
                     <use xlinkHref="https://themes.pixelstrap.com/fastkart/assets/svg/leaf.svg#leaf" />

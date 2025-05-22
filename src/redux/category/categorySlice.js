@@ -13,9 +13,7 @@ export const getCategory = createAsyncThunk(
   'category/getCategory',
   async (_, thunkAPI) => {
     try {
-      console.log("url");
       const url = `${Baseurl}/api/v1/category/selected-cat`;
-      
       const resp = await axios.get(url);
       return resp.data;
     } catch (error) {

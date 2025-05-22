@@ -7,7 +7,7 @@ import { BiCategoryAlt } from "react-icons/bi";
 import { BsCart3 } from "react-icons/bs";
 import Link from "next/link";
 
-const Hadear = () => {
+const Header = () => {
   return (
     <>
       {/* Header Start */}
@@ -212,4 +212,4 @@ const Hadear = () => {
   );
 };
 
-export default Hadear;
+export default Header;
